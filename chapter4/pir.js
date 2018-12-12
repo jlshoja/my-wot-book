@@ -1,5 +1,5 @@
-var Gipo = require ('onoff');
-var sensor = new Gipo(17,'in', 'both');
+var Gpio = require ('onoff');
+var sensor = new Gpio(17,'in', 'both');
 
 sensor.watch(function(err,value) {
 	if (err) exit(err);
