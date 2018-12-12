@@ -9,10 +9,10 @@ var Gipo = onoff.Gipo,
 		});
 	}, 2000);
 
-	proccess.on('SIGNIT' , function () {
+	process.on('SIGNIT' , function () {
 		clearInterval(interval);
 		led.writeSync(0);
 		led.unexport();
 		console.log('bye , bey');
-		proccess.exit();
+		process.exit();
 	});
