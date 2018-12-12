@@ -1,0 +1,9 @@
+Temperature:12Light:29
+Temperature:30Light:98
+Temperature:21Light:39
+Temperature:32Light:19
+Temperature:26Light:24
+Temperature:11Light:90
+Temperature:24Light:24
+Temperature:22Light:92
+Temperature:35Light:81
