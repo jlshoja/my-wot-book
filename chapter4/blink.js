@@ -1,6 +1,6 @@
 var onoff = require ('onoff');
-var Gipo = onoff.Gipo, 
-	led = new Gipo(4,'out'), interval;
+var Gpio = onoff.Gpio, 
+	led = new Gpio(4,'out'), interval;
 
 	interval = setInterval (function()  {
 		var value = (led.readSync() + 1) % 2;

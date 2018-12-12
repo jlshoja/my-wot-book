@@ -1,4 +1,7 @@
+sudo shutdown -h now
+
 git add .
+
 
 git status
 
