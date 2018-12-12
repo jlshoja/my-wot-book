@@ -1,4 +1,5 @@
-var Gpio = require ('onoff');
+
+var Gpio = require ('onoff').Gpio;
 var sensor = new Gpio(17,'in', 'both');
 
 sensor.watch(function(err,value) {
