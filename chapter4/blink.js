@@ -1,6 +1,6 @@
 var onoff = require ('onoff');
-var Gpio = onoff.Gpio, 
-	led = new Gpio(4,'out'), interval;
+var Gipo = onoff.Gipo, 
+	led = new Gipo(4,'out'), interval;
 
 	interval = setInterval (function()  {
 		var value = (led.readSync() + 1) % 2;
@@ -9,10 +9,10 @@ var Gpio = onoff.Gpio,
 		});
 	}, 2000);
 
-	process.on('SIGNIT' , function () {
+	proccess.on('SIGNIT' , function () {
 		clearInterval(interval);
 		led.writeSync(0);
 		led.unexport();
 		console.log('bye , bey');
-		process.exit();
+		proccess.exit();
 	});
