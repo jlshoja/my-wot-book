@@ -1,0 +1,23 @@
+sudo apt-get install git
+
+ git config --global user.name "jlshoja"
+
+git config --global user.email "jlshoja@gmail.com"
+
+git commit -m "Initial commit"
+
+git remote add origin http://github.com/jlshoja/my-wot-book.git
+
+git push -u origin master
+
+git clone https://github.com/my-wot-book
+
+cd wot-book
+
+git pull
+
+git commit –m "Some changes"
+
+git push origin master
+
+
