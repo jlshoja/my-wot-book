@@ -6,7 +6,7 @@ var cors = require('cors');
 
 var app = express();
 
-app.use(cors());
+//app.use(cors());
 app.use ('/pi/actuators', actuatorsRoutes);
 app.use ('/pi/sensors', sensorsRoutes);
 

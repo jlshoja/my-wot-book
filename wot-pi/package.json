@@ -13,3 +13,8 @@
     "express": "^4.16.4"
   }
 }
+
+"optionalDependencies": {
+"onoff": "^1.0.4",
+"node-dht-sensor": "^0.0.8"
+}
