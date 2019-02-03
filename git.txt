@@ -4,6 +4,8 @@ sudo apt-get install git
 
 git config --global user.email "jlshoja@gmail.com"
 
+git add --all
+
 git commit -m "Initial commit"
 
 git remote add origin http://github.com/jlshoja/my-wot-book.git
