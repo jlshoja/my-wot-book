@@ -26,8 +26,8 @@ exports.stop = function () {
 
 function connectHardware() {
 	var onoff = require('onoff');
-	var Gipo = onoff.Gipo;
-	sensor = new Gipo(model.gipo, 'in','both');
+	var Gpio = onoff.Gpio;
+	sensor = new Gpio(model.gpio, 'in','both');
 	sensor.watch(function(err,value) {
 		if (err) exit(err);
 		model.value = !!value;
