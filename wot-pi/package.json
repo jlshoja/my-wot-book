@@ -4,8 +4,10 @@
   "description": "",
   "main": "wot-server.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "cors": "^2.8.5"
+    "msgpack5": "^4.2.1",
+    "node-json2html": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
