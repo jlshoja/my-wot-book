@@ -3,14 +3,17 @@ sudo apt-get install git
  git config --global user.name "jlshoja"
 
 git config --global user.email "jlshoja@gmail.com"
+---------------------------------------------------
 
 git add --all
+git commit -m "Thirs commit"
+git push -u origin master
 
-git commit -m "Initial commit"
+---------------------------------------------------
 
 git remote add origin http://github.com/jlshoja/my-wot-book.git
 
-git push -u origin master
+
 
 git clone https://github.com/my-wot-book
 
