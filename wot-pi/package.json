@@ -5,6 +5,7 @@
   "main": "wot-server.js",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "coap": "^0.23.1",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "msgpack5": "^4.2.1",
