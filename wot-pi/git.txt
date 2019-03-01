@@ -6,7 +6,7 @@ git config --global user.email "jlshoja@gmail.com"
 ---------------------------------------------------
 
 git add --all
-git commit -m "forth commit"
+git commit -m "new commit"
 git push -u origin master
 
 ---------------------------------------------------
@@ -77,7 +77,7 @@ curl -X POST "$SERVER/projects/$PROJECT_ID/applications" \
 -d '{ "name": "My Awesome WoT App", "description": "My First WoT Client Application","tags":["WoT","device","plug","energy"], "socialNetworks": {} }'
 
 
-"appApiKey":"LtVfZHH1KJKexYxDVrLUSfKu6PEZt74Dle0w5nF1xtPJvvOHpQlvAaetjweqbIT0WCzlsP188G0DdPOs"
+
 
 APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
 
@@ -85,11 +85,12 @@ APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
 SERVER="https://api.evrythng.com"
 EVRYTHNG_API_KEY="JfKZQx7coCIoe6mrdKRpC3ixfiV1TV6Xrz57vCZZBbuD34GaSLzmnnW98O6l5lmPeRNm6ku3laNaxR4A"
 PROJECT_ID="UqE2eySKKAtCqARRw3MynbEm"
-APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
 PRODUCT_ID="UMEkePW9gw9YshwwamwAfrxq"
 THNG_ID="UqYFBQ8TrxkawpRwwGwrqqga"
 thngId="UqYFBQ8TrxkawpRwwGwrqqga"
 THNG_API_KEY="YQZMs03zl4nJQdqXDbcU7IGJvo9xGp5i47CYhdRADnM0tERM9W0qjWRcF2WWLF0Yc4py22xcjUYrTtaE"
+"appApiKey":"LtVfZHH1KJKexYxDVrLUSfKu6PEZt74Dle0w5nF1xtPJvvOHpQlvAaetjweqbIT0WCzlsP188G0DdPOs"
+APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
