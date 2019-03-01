@@ -118,5 +118,6 @@ curl -X POST "$SERVER/thngs/$THNG_ID/properties" \
 -H "Authorization: $THNG_API_KEY" \
 -H "Content-Type: application/json" \
 -d '[{"key": "status","value": true},  {"key": "energyConsumption","value": 71}]'
+-------------------------------------------------------------------------------------------------------------------
 
-
+cd my-wot-book/wot-pi/chapter7/part3-cloud
