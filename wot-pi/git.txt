@@ -121,3 +121,19 @@ curl -X POST "$SERVER/thngs/$THNG_ID/properties" \
 -------------------------------------------------------------------------------------------------------------------
 
 cd my-wot-book/wot-pi/chapter7/part3-cloud
+
+____________________________________________________________________________________________________________________
+curl -X POST "$SERVER/actions?project=$PROJECT_ID" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "name": "_setStatus", "description": "Changes the Status of the Thng","tags":["WoT","device"] }'
+
+---------------------------------------------------------------------------------------------------------------------
+curl -X POST "$SERVER/actions/_setStatus?project=$PROJECT_ID" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "type": "_setStatus", "thng":"'$THNG_ID'", "customFields":{"status":"false"} }'
+
+--------------------------------------------------------------------------------------------------------------------
+?key=JfKZQx7coCIoe6mrdKRpC3ixfiV1TV6Xrz57vCZZBbuD34GaSLzmnnW98O6l5lmPeRNm6ku3laNaxR4A&thngId=UqYFBQ8TrxkawpRwwGwrqqga
+
