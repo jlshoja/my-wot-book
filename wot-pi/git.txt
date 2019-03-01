@@ -1,0 +1,121 @@
+sudo apt-get install git
+
+ git config --global user.name "jlshoja"
+
+git config --global user.email "jlshoja@gmail.com"
+---------------------------------------------------
+
+git add --all
+git commit -m "forth commit"
+git push -u origin master
+
+---------------------------------------------------
+
+git remote add origin http://github.com/jlshoja/my-wot-book.git
+
+
+---------------------------------------------------------
+wget https://nodejs.org/dist/v4.4.2/node-v4.4.2-linux-armv7l.tar.gz
+tar -xvf node-v4.4.2-linux-armv7l.tar.gz
+cd node-v4.4.2-linux-armv7l
+sudo cp -R * /usr/local/
+node –-version
+> v4.4.2
+--------------------------------------------------------
+
+git clone https://github.com//jlshoja/my-wot-book
+
+cd wot-book
+
+git pull
+
+git commit –m "Some changes"
+
+git push origin master
+_____________________________________________________________________
+
+sudo shutdown -h now
+
+---------------------------------------------------------------------
+"optionalDependencies": {
+"onoff": "^1.0.4",
+"node-dht-sensor": "^0.0.8"
+}
+---------------------------------------------------------------------
+npm install --save ws@0.7.2
+
+
+_____________________________________________________________________
+
+un: pi.local
+pw: shadii
+
+---------------------------------------------------------------------
+
+cLOUD 
+
+SERVER="https://api.evrythng.com"
+EVRYTHNG_API_KEY="JfKZQx7coCIoe6mrdKRpC3ixfiV1TV6Xrz57vCZZBbuD34GaSLzmnnW98O6l5lmPeRNm6ku3laNaxR4A"
+
+Create a project
+
+curl -X POST "$SERVER/projects" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "name": "Web of Things Book", "description": "My First WoT Project" }' --verbose
+
+
+Project ID
+
+PROJECT_ID="UqE2eySKKAtCqARRw3MynbEm"
+
+Creat an Application
+
+curl -X POST "$SERVER/projects/$PROJECT_ID/applications" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "name": "My Awesome WoT App", "description": "My First WoT Client Application","tags":["WoT","device","plug","energy"], "socialNetworks": {} }'
+
+
+"appApiKey":"LtVfZHH1KJKexYxDVrLUSfKu6PEZt74Dle0w5nF1xtPJvvOHpQlvAaetjweqbIT0WCzlsP188G0DdPOs"
+
+APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SERVER="https://api.evrythng.com"
+EVRYTHNG_API_KEY="JfKZQx7coCIoe6mrdKRpC3ixfiV1TV6Xrz57vCZZBbuD34GaSLzmnnW98O6l5lmPeRNm6ku3laNaxR4A"
+PROJECT_ID="UqE2eySKKAtCqARRw3MynbEm"
+APP_ID="UMh2Bn3G3DbVcFwwa4fgNgDb"
+PRODUCT_ID="UMEkePW9gw9YshwwamwAfrxq"
+THNG_ID="UqYFBQ8TrxkawpRwwGwrqqga"
+thngId="UqYFBQ8TrxkawpRwwGwrqqga"
+THNG_API_KEY="YQZMs03zl4nJQdqXDbcU7IGJvo9xGp5i47CYhdRADnM0tERM9W0qjWRcF2WWLF0Yc4py22xcjUYrTtaE"
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+curl -X POST "$SERVER/products?project=$PROJECT_ID" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "fn": "WoT Smart Plug", "description": "A Web-connected Smart Plug","tags":["WoT","device","energy"],"photos":["https:// webofthings.github.io/files/plug.jpg"]}'
+
+_______________________________________________________________________________________________
+curl -X POST "$SERVER/thngs?project=$PROJECT_ID" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "name": "My WoT Plug", "product":"'$PRODUCT_ID'", "description":"My own Smart Plug","tags":["WoT","device","plug","energy"] }'
+
+__________________________________________________________________________________________________________________________
+
+curl -X POST "$SERVER/auth/evrythng/thngs" \
+-H "Authorization: $EVRYTHNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{ "thngId": "'$THNG_ID'" }'
+____________________________________________________________________________________________________________
+
+curl -X POST "$SERVER/thngs/$THNG_ID/properties" \
+-H "Authorization: $THNG_API_KEY" \
+-H "Content-Type: application/json" \
+-d '[{"key": "status","value": true},  {"key": "energyConsumption","value": 71}]'
+
+
